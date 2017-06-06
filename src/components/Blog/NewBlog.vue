@@ -18,27 +18,41 @@
                         strong INPUT DATA
                       hr
                       form
+                        .col-md-12
+                          div(v-if='submitted')
+                            .alert.alert-success
+                              | Thanks for adding your post blog :)
                         .col-md-6
                           label
                             | Title
-                          input(v-model='title', type='text', class='form-control', placeholder='Masukan judul disini!')
+                          input(v-model.lazy='blog.title', type='text', class='form-control', placeholder='Masukan judul disini!', required)
                           br
 
-                        .col-md-6
+                        .col-md-2
                           label
                             | Status
-                          input(v-model='status', type='text', class='form-control', placeholder='Status!')
+                          br
+                          input(v-model.lazy='blog.status', type='checkbox', value='', required)
+                          br
+
+                        .col-md-4
+                          label
+                            | Author
+                          br
+                          select(v-model.lazy='blog.author', class='form-control' required)
+                            option(v-for='author in authors')
+                              {{ author }}
                           br
 
                         .col-md-12
                           label
                             | Description
-                          textarea(v-model='description', class='form-control', placeholder='Masukan deskripsi disini!')
+                          textarea(v-model.lazy='blog.description', class='form-control', placeholder='Masukan deskripsi disini!', required)
                           br
 
                         .col-md-12
                           br
-                          button.btn.btn-success
+                          button(v-on:click.prevent='post', class='btn btn-success')
                             | Submit
 
                 .col-md-6
@@ -50,15 +64,19 @@
                       .col-md-12
                         label Title :
                         p
-                          {{ title }}
+                          {{ blog.title }}
                       .col-md-12
                         label Description :
                         p
-                          {{ description }}
+                          {{ blog.description }}
                       .col-md-12
                         label Status :
                         p
-                          {{ status }}
+                          {{ blog.status }}
+                      .col-md-12
+                        label Author :
+                        p
+                          {{ blog.author }}
 </template>
 
 <script>
@@ -66,9 +84,33 @@
     name: 'app-blog-new',
     data () {
       return {
-        title: '',
-        description: '',
-        status: ''
+        blog: {
+          title: '',
+          description: '',
+          status: '',
+          author: ''
+        },
+        authors: [
+          'Fathan Rohman',
+          'Febryan Setiawan',
+          'Teguh Hartono',
+          'Dewi',
+          'Intan Permatasari'
+        ],
+        submitted: false
+      }
+    },
+    methods: {
+      post: function () {
+        this.$http.post('http://localhost:3000/blog', {
+          title: this.blog.title,
+          description: this.blog.description,
+          status: this.blog.status,
+          author: this.blog.author
+        }).then(function (res) {
+          console.log(res)
+          this.submitted = true
+        })
       }
     }
   }

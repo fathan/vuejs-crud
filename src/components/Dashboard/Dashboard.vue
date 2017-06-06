@@ -4,13 +4,26 @@
       .row
         .col-md-12
           .jumbotron
-            p
-              | Welcome to App with Vue.js 2
+            p.text-center
+              {{ msg }}
+              br
+              button(v-on:click='greeting()', type='button', class='btn btn-default')
+                | cek
 </template>
 
 <script>
 export default {
-  name: 'app-dashboard'
+  name: 'app-dashboard',
+  data () {
+    return {
+      msg: 'Welcome to App with Vue.js 2'
+    }
+  },
+  methods: {
+    greeting: function () {
+      console.log('Hello Word!')
+    }
+  }
 }
 </script>
 

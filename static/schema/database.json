@@ -3,32 +3,79 @@
     {
       "id": 1,
       "title": "Belajar membuat CRUD dengan Vue.js 2",
+      "author": "Fathan Rohman",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "status": true
     },
     {
       "id": 2,
       "title": "Vuex didalam Vue.js 2",
+      "author": "Dewi",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "status": false
     },
     {
       "id": 3,
       "title": "Membuat aplikasi mobile dengan Vue.js 2",
+      "author": "Febryan Setiawan",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "status": true
     },
     {
       "id": 4,
       "title": "Membuat aplikasi desktop dengan Vue.js 2",
+      "author": "Teguh Hartono",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "status": false
     },
     {
       "id": 5,
       "title": "State management Vue.js dengan Vuex",
+      "author": "Yuliana",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "status": true
+    },
+    {
+      "title": "belajar input post with vue.js 2",
+      "description": "halo semuanya saya febry sedang belajar javascript ",
+      "status": true,
+      "author": "Febryan Setiawan",
+      "id": 6
+    },
+    {
+      "title": "testing",
+      "description": "saya ganteng",
+      "status": true,
+      "author": "Febryan Setiawan",
+      "id": 7
+    },
+    {
+      "title": "sasa",
+      "description": "ssasaasa",
+      "status": true,
+      "author": "Teguh Hartono",
+      "id": 8
+    },
+    {
+      "title": "sasas",
+      "description": "sasasasasas",
+      "status": true,
+      "author": "Teguh Hartono",
+      "id": 9
+    },
+    {
+      "title": "baru lagi yah",
+      "description": "",
+      "status": "",
+      "author": "",
+      "id": 10
+    },
+    {
+      "title": "baru lagi yah",
+      "description": "sasasasasasa",
+      "status": true,
+      "author": "Intan Permatasari",
+      "id": 11
     }
   ]
 }
