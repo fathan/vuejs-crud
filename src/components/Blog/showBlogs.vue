@@ -51,11 +51,9 @@
       }
     },
     methods: {
-      deletePost: function (id) {
-        this.$http.delete('http://localhost:3000/blog' + id).then(function (res) {
-          console.log(res)
-          this.blogs = res.body.slice(0, 10)
-        })
+      deletePost: function (e) {
+        this.$http.delete('http://localhost:3000/blog/' + e)
+          .then((res) => { this.$router.push({ path: 'blogs' }) })
       }
     },
     created () {

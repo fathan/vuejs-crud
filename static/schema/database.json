@@ -41,41 +41,6 @@
       "status": true,
       "author": "Febryan Setiawan",
       "id": 6
-    },
-    {
-      "title": "malam enak 4",
-      "status": true,
-      "author": "Febryan Setiawan",
-      "description": "saya ganteng",
-      "id": 7
-    },
-    {
-      "title": "malam enak 3",
-      "status": true,
-      "author": "Teguh Hartono",
-      "description": "test",
-      "id": 8
-    },
-    {
-      "title": "malam enak 2",
-      "status": true,
-      "author": "Febryan Setiawan",
-      "description": "test",
-      "id": 9
-    },
-    {
-      "title": "malam enak",
-      "status": true,
-      "author": "Teguh Hartono",
-      "description": "sasasas",
-      "id": 10
-    },
-    {
-      "title": "baru lagi yah",
-      "description": "sasasasasasa",
-      "status": true,
-      "author": "Intan Permatasari",
-      "id": 11
     }
   ]
 }
