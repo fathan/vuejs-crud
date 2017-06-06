@@ -34,10 +34,10 @@
                     label.label.label-danger
                       | Unpublished
                 td
-                  a(class='btn btn-xs btn-warning')
+                  router-link(v-bind:to="'/blog/edit/' + blog.id", class='btn btn-xs btn-warning')
                     | Edit
                   &nbsp;
-                  a(class='btn btn-xs btn-danger')
+                  a(v-on:click='deletePost(blog.id)', class='btn btn-xs btn-danger')
                     | Delete
 </template>
 
@@ -51,7 +51,12 @@
       }
     },
     methods: {
-
+      deletePost: function (id) {
+        this.$http.delete('http://localhost:3000/blog' + id).then(function (res) {
+          console.log(res)
+          this.blogs = res.body.slice(0, 10)
+        })
+      }
     },
     created () {
       this.$http.get('http://localhost:3000/blog').then(function (res) {
